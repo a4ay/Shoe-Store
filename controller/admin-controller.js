@@ -5,11 +5,7 @@ const fs = require('fs')
 
 const Product = require('../model/product')
 
-cloudinary.config({ 
-    cloud_name: 'dkr7rsojj', 
-    api_key: '381681957896718', 
-    api_secret: 'Fo_9csz8sCpW_QyFARV2eE1jTeM' 
-  });
+cloudinary.config({});
 
 exports.getProduct = (req, res) => {
     Product.find().then( (products) => {
